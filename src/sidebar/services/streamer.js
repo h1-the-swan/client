@@ -169,8 +169,8 @@ function Streamer($rootScope, annotationMapper, store, auth,
         // not support setting the `Authorization` header directly as we do for
         // other API requests.
         // var parsedURL = new URL(settings.websocketUrl);
-		console.log("settings.websocketUrl is " + settings.websocketUrl + " but we will bypass")
-        var parsedURL = new URL("http://localhost:5001");
+		console.log("settings.websocketUrl is " + settings.websocketUrl)
+        var parsedURL = new URL(settings.websocketUrl);
         var queryParams = queryString.parse(parsedURL.search);
         queryParams.access_token = token;
         parsedURL.search = queryString.stringify(queryParams);
