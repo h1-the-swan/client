@@ -43,6 +43,8 @@ function hostPageConfig(window) {
 
 	//h1-the-swan
 	'websocketUrl',
+	'liveReloadServer',
+	'testSetting',
   ];
 
   return Object.keys(config).reduce(function (result, key) {
