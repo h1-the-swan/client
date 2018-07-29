@@ -119,6 +119,7 @@ function setupHttp($http, streamer) {
 }
 
 function processAppOpts() {
+	console.log(settings);
   if (settings.liveReloadServer) {
     require('./live-reload-client').connect(settings.liveReloadServer);
   }
