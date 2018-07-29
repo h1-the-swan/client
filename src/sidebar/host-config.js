@@ -40,6 +40,9 @@ function hostPageConfig(window) {
     'theme',
 
     'usernameUrl',
+
+	//h1-the-swan
+	'websocketUrl',
   ];
 
   return Object.keys(config).reduce(function (result, key) {
